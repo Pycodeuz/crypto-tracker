@@ -1,7 +1,7 @@
 from aiohttp import ClientSession
 
 from async_lru import alru_cache
-from backend.src.config import settings  # Import settings
+from backend.src.config import settings
 
 
 class HTTPClient:
@@ -15,7 +15,7 @@ class HTTPClient:
 
 
 class CMCHTTPClient(HTTPClient):
-    def __init__(self, base_url: str, api_key: str = settings.CMC_API_KEY):  # Use the settings here
+    def __init__(self, base_url: str, api_key: str = settings.CMC_API_KEY):
         super().__init__(base_url, api_key)
 
     @alru_cache
