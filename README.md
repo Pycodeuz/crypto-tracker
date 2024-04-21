@@ -1,7 +1,7 @@
 # Crypto Tracker
 ![app.png](docs/app.png)
 
-## Стек
+## Stack
 - FastAPI + pydantic, pydantic-settings, aiohttp
 - React + axios, ant design, tailwind
 
